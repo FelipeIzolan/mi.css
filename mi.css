@@ -1,9 +1,7 @@
 html,
 body {
-  color: #212121;
-  background: #f6f6f6;
   font-size: 16px;
-  font-family: sans-serif;
+  font-family: system-ui, sans-serif;
   line-height: 1.6;
 }
 
@@ -11,10 +9,12 @@ body {
   margin: auto;
   padding: 1em;
   max-width: 40em;
+  color: #212121;
+  background: #FAFAFA;
 }
 
 /*------*/
-/* Additional elements that require margin can be added here as needed */
+/* Add or remove elements */
 /*------*/
 p,
 hr,
@@ -58,8 +58,15 @@ blockquote {
 
 ul,
 ol {
-  padding: 0 1em;
+  padding: 0;
   list-style-position: inside;
+}
+
+ul ul,
+ul ol,
+ol ul,
+ol ol {
+  padding-inline: 1em;
 }
 
 pre,
@@ -97,6 +104,6 @@ button,
 input[type="reset"],
 input[type="button"],
 input[type="submit"] {
-  color: #f6f6f6;
+  color: #FAFAFA;
   background: #212121;
 }
